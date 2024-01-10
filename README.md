@@ -1,18 +1,21 @@
-# Salesforce DX Project: Next Steps
+# Post Deployment Steps
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# Configure field-level security
 
-## How Do You Plan to Deploy Your Changes?
+# Step 1:
+Make field **"Status"** on the **Inquiry** object visible for your user (System Administrator, for example)
+![image](https://github.com/4Foxy/FlowTestTask/assets/65070631/b91becd2-7883-4443-af08-726fa158abaa)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+# Step 2:
+Make field **"Open Inquiries Count"** on the **Account** object visible for your user (System Administrator, for example)
+![image](https://github.com/4Foxy/FlowTestTask/assets/65070631/b91becd2-7883-4443-af08-726fa158abaa)
 
-## Configure Your Salesforce DX Project
+# Add flow to home page
+You can add flow "**Accounts with open inquiries**" to home page to view a result.
+![image](https://github.com/4Foxy/FlowTestTask/assets/65070631/cc3b200a-5589-42c7-8500-55bb6a7fcb1f)
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-## Read All About It
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
+
+
