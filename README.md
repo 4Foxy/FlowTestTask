@@ -1,18 +1,18 @@
-# Salesforce DX Project: Next Steps
+# Post Deployment Steps
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# Configure permission set
 
-## How Do You Plan to Deploy Your Changes?
+# Step 1:
+Find permission set **"API Callout Permission Set"** and assign for your user (System Administrator, for example)
+![image](https://github.com/4Foxy/FlowTestTask/assets/65070631/f623753b-44ce-4a73-a0c5-67d1e341dcfc)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+# Step 2:
+Click on the **External Credential Principal Access** and enable **ZippopotamApiAuthentication - GetAddress**.
+![image](https://github.com/4Foxy/FlowTestTask/assets/65070631/89597710-de0d-437f-b75a-da03244cd889)
 
-## Configure Your Salesforce DX Project
+# Configure field-level security
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+# Step 1:
+Make field "Status Message" visible for your user (System Administrator, for example)
+![image](https://github.com/4Foxy/FlowTestTask/assets/65070631/1459f2b0-9447-45fa-b554-adab6a7ce7ce)
 
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
